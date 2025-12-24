@@ -17,3 +17,28 @@ export interface RegisterRequest {
     email: string
     password: string
 }
+
+export interface ApiResponse<T = any> {
+    success: boolean
+    message: string
+    data?: T
+}
+
+export interface AuthResponse {
+    success: boolean
+    message: string
+    data?: {
+        user: User
+        token: string
+    }
+}
+
+export interface UpdateProfileRequest {
+    name?: string
+    email?: string
+}
+
+export interface UpdatePasswordRequest {
+    oldPassword: string
+    newPassword: string
+}
