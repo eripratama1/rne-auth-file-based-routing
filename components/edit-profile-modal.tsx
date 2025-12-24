@@ -154,7 +154,7 @@ export default function EditProfileModal({
                                 {errors.email && <Text style={stylesEditModal.errorText}>{errors.email.message}</Text>}
                             </ThemedView>
 
-                            <ThemedView style={stylesEditModal.footer}>
+                            <ThemedView style={stylesEditModal.footerContainer}>
                                 <Pressable
                                     style={stylesEditModal.cancelBtn}
                                     onPress={handleClose}

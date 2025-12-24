@@ -7,15 +7,19 @@ export const stylesEditModal = StyleSheet.create({
     },
     header: {
         flexDirection: "row",
-        justifyContent: "space-between",
+        // justifyContent: "space-between",
+        justifyContent: "center",
         alignItems: "center",
         paddingHorizontal: 20,
         paddingVertical: 16,
+        marginHorizontal:10,
         borderBottomWidth: 1,
     },
     title: {
         fontSize: 18,
         fontWeight: "600",
+        justifyContent:"center",
+        textAlign:"center"
     },
     cancelButton: {
         fontSize: 16,
@@ -30,9 +34,12 @@ export const stylesEditModal = StyleSheet.create({
         opacity: 0.5,
     },
     form: {
-        padding: 20,
+        width: "100%",
+        flex: 1,
+        paddingHorizontal: 20,
     },
     inputContainer: {
+        marginTop:8,
         marginBottom: 20,
     },
     label: {
@@ -73,21 +80,25 @@ export const stylesEditModal = StyleSheet.create({
         color: "#6b7280",
     },
 
-    footer: {
+    footerContainer: {
+        padding: 24,
+        marginTop: 'auto',
         flexDirection: 'row',
-        padding: 16,
         gap: 12,
-        borderTopWidth: 1,
-        borderTopColor: '#e5e7eb',
-        backgroundColor: '#fff',
     },
-
+    footer: {
+        //flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: 16,
+    },
     cancelBtn: {
         flex: 1,
         paddingVertical: 14,
         borderRadius: 8,
         borderWidth: 1,
         borderColor: '#d1d5db',
+        backgroundColor: '#f9fafb',
         alignItems: 'center',
     },
 
