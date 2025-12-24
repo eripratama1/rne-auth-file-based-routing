@@ -72,4 +72,42 @@ export const stylesEditModal = StyleSheet.create({
         fontSize: 16,
         color: "#6b7280",
     },
+
+    footer: {
+        flexDirection: 'row',
+        padding: 16,
+        gap: 12,
+        borderTopWidth: 1,
+        borderTopColor: '#e5e7eb',
+        backgroundColor: '#fff',
+    },
+
+    cancelBtn: {
+        flex: 1,
+        paddingVertical: 14,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#d1d5db',
+        alignItems: 'center',
+    },
+
+    saveBtn: {
+        flex: 1,
+        paddingVertical: 14,
+        borderRadius: 8,
+        backgroundColor: '#2563eb',
+        alignItems: 'center',
+    },
+
+    cancelText: {
+        color: '#374151',
+        fontWeight: '600',
+    },
+
+    saveText: {
+        color: '#fff',
+        fontWeight: '600',
+    },
+
+
 })

@@ -13,12 +13,7 @@ export const styles = StyleSheet.create({
         marginHorizontal: 16,
         marginTop: 12,
         borderRadius: 16,
-        backgroundColor: "rgba(255,255,255,0.05)",
         elevation: 3,
-        shadowColor: "#000",
-        shadowOpacity: 0.15,
-        shadowRadius: 8,
-        shadowOffset: { width: 0, height: 4 },
     },
 
     // --- AVATAR ---
@@ -88,16 +83,12 @@ export const styles = StyleSheet.create({
         paddingVertical: 8,
         marginHorizontal: 16,
         borderRadius: 16,
-        backgroundColor: "rgba(255,255,255,0.05)",
-        elevation: 2,
-        shadowColor: "#000",
-        shadowOpacity: 0.1,
-        shadowRadius: 6,
-        shadowOffset: { width: 0, height: 2 },
+        elevation: 4,
     },
 
     cardSectionTitle: {
         fontSize: 18,
+        textAlign: "center",
         fontWeight: "700",
         paddingHorizontal: 20,
         paddingVertical: 14,

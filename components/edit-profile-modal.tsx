@@ -85,18 +85,18 @@ export default function EditProfileModal({
                         behavior={Platform.OS === "ios" ? "padding" : "height"}
                     >
                         <ThemedView style={stylesEditModal.header}>
-                            <Pressable
+                            {/* <Pressable
                                 android_ripple={{ color: "#cccccc" }}
                                 onPress={handleClose}
                                 disabled={isSubmitting}
                             >
                                 <ThemedText style={stylesEditModal.cancelButton}>Cancel</ThemedText>
-                            </Pressable>
+                            </Pressable> */}
                             <ThemedText style={stylesEditModal.title}>
                                 Edit Profile
                             </ThemedText>
 
-                            <Pressable
+                            {/* <Pressable
                                 android_ripple={{ color: "#cccccc" }}
                                 onPress={handleSubmit(onSubmit)}
                                 disabled={isSubmitting}
@@ -107,7 +107,7 @@ export default function EditProfileModal({
                                     }>
                                     Save
                                 </ThemedText>
-                            </Pressable>
+                            </Pressable> */}
                         </ThemedView>
 
                         <ThemedView style={stylesEditModal.form}>
@@ -153,6 +153,30 @@ export default function EditProfileModal({
                                 />
                                 {errors.email && <Text style={stylesEditModal.errorText}>{errors.email.message}</Text>}
                             </ThemedView>
+
+                            <ThemedView style={stylesEditModal.footer}>
+                                <Pressable
+                                    style={stylesEditModal.cancelBtn}
+                                    onPress={handleClose}
+                                    disabled={isSubmitting}
+                                >
+                                    <ThemedText style={stylesEditModal.cancelText}>Cancel</ThemedText>
+                                </Pressable>
+
+                                <Pressable
+                                    style={[
+                                        stylesEditModal.saveBtn,
+                                        isSubmitting && stylesEditModal.buttonDisabled,
+                                    ]}
+                                    onPress={handleSubmit(onSubmit)}
+                                    disabled={isSubmitting}
+                                >
+                                    <ThemedText style={stylesEditModal.saveText}>
+                                        {isSubmitting ? 'Saving...' : 'Save'}
+                                    </ThemedText>
+                                </Pressable>
+                            </ThemedView>
+
                         </ThemedView>
 
                         {isSubmitting && (

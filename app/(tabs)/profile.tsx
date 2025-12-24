@@ -237,7 +237,7 @@ export default function ProfileScreen() {
 
 
                 <ThemedView style={styles.cardSections}>
-                    <ThemedText style={styles.cardSectionTitle}>Account</ThemedText>
+                    <ThemedText style={styles.cardSectionTitle}>Dashboard Menu</ThemedText>
 
                     <Pressable
                         style={styles.menuItem}
